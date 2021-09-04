@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Home Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<ul id="nav-bar">
+    <li><a class="nav-bar-opacity" href="#">Gmail</a></li>
+    <li><a class="nav-bar-opacity" href="#">Images</a></li>
+    <li><a href="#">
+        <div class="nav-bar-opacity" id="menu-icon"></div>
+    </a></li>
+    <li>
+        <button id="sign-in"><a href="#" id="sign-in-text">Sign in</a></button>
+        <!--- Code for notifications and image icon --->
+    </li>
+    <li><a class="user" href="#"><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUwvDfaXETfAbcH6HamosRWzn2-XLd64_7w&usqp=CAU" height="28px"> </a> </li>
+    <li><a class="user" href="#"><div><img src="https://gm1.ggpht.com/ljytiVEdt91cSSpoos2eUbiicp0Jpcq8W3Vf4TlXGiuSsh-T83JcPc3CcpPHLdQBX5R-XJyg7S4zS_0oRc3b602iTca8N2adDMBH4a-nMxjipBkXic9ZB2n46NMoUrKPsOV1JAu0WFVgBCygVimxp--15qHmGyBFNViQwb4pLves1N1cH9XI8AjW0QWfKHqjgrgAodP8ti0NbUResVtjHt4Tm9xsIzZYAMzhA5y1yG6VQSTjAXwYy8k0JQmA4sG2ihkAzPTD5_7b27tOl1oP-uhhEgG1gJ-waL97BrB6PkXFqUkaF7eGxmoZghBaVRcHqDXBxOQDq_IhvS2IP_9lyjYs3HmHpGLlP156SSmUJF5WP0n1sGoGFb8XCju-Us3nrk45bW9CCSEzT23segkkR2MDkLgfBEcppDZuBJ10_Q2F3-dIcDMT_uhgwb5Ph1we-NddBnL_nZ2KJldWCBN6BTtMnwvxHTyT7YKRYDZby2ZabJRInU1kvVMX5ZvNaeleCfjh54yWg8LGxUvsdoQq3Yd1iJerIyeLQIIHB61Voamk01v0wQw7yV8b1RWfwwocUpY9GSpmQQYR0VLT1NmDqkrPiibnMufBTsNhBt4XUvpcdyg956z_e2u6oZiXARyvRel1t9V1lK3B6cvZazlON9-5xH7aBtQoDQ_JGwH36UaMBmdnIhVQyg29sNW0RcHu5VLY9ckT0HLiRTIlPCrBoCvKTqv57NZw64J1l2s=s0-l75-ft-l75-ft" style="height:28px"> </a> </li>
+</ul>
+
+<div class="main-content">
+    <div id="logo">
+        <img alt="Google logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <div id="search-bar">
+        <label>
+            <input name="search" type="text">
+        </label>
+        <a href="#" id="speech-link"><img
+                alt="Speech icon"
+                src="https://lh5.googleusercontent.com/OorCLDb2xlVQ4P2MDNCiwAnpv0K1ZrcDwEwRS3sOfDMrnYTnVPvCh7WtFQMbZ_S9u_jzcSLd8g=s128-h128-e365"></a>
+    </div>
+    <div class="buttons">
+        <button name="Google-Search" style="opacity: 0.5;">Google Search</button>
+        <button name="Feeling-Lucky" style="opacity: 0.5;">I'm Feeling Lucky</button>
+    </div>
+    <!-- Code for adding recent tabs using section-->
+    <section class="cards">
+        <a class="card" href="https://www.youtube.com/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/1200px-YouTube_social_white_square_%282017%29.svg.png" alt="Youtube"> YouTube
+        </a>
+        <a class="card" href="https://github.com/gjw6k" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt= "Github"> Github
+        </a>
+        <a class="card" href="https://outlook.office.com/mail/inbox" target="_blank">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/3119rbuJb%2BL.jpg" alt="Outlook"> Outlook
+        </a>
+        <a class="card" href="https://www.amazon.com/" target="_blank">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/gc/designs/livepreview/a_generic_white_10_us_noto_email_v2016_us-main._CB485921587_.png" alt="Amazon"> Amazon
+        </a>
+        <a class="card" href="https://web.whatsapp.com/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="Whatsapp Web"> Whatsapp Web
+        </a>
+        <a class="card" href="https://www.netflix.com/" target="_blank">
+            <img src="data:image/png;base64,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" alt="Netflix"> Netflix
+        </a>
+
+    </section>
+</div>
+</body>
+<footer>
+    <div class="bottom-nav">
+        <ul class="ul-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul class="ul-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+
+        </ul>
+    </div>
+</footer>
+</html>
