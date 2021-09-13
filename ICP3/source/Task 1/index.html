@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <!---Calling css file--->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Header here-->
+<div class="results">
+    <p style="color: brown;" > Rock - Paper - Scissors!</p>
+    <p> <img src="https://tiermaker.com/images/templates/221543423009.jpg"
+             style=" width:08%;margin-bottom:0.5em;"></p>
+</div>
+<div class="options, row">
+    <!-- inserting the image and inserting the image for user to choose from-->
+    <div class="option" id="rock">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-DipYgmtEpNMvKTBDvYrlrirnLsSF1WpiA&amp;usqp=CAU"
+             style=" width:80%; margin-left: 300px; margin-bottom:0.5em;" alt="Rock">
+    </div>
+    <div class="option" id="paper">
+        <img src="data:image/png;base64,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"
+             style=" width:80%;margin-left: 300px; margin-right: 1%; margin-bottom:0.5em;" alt="Paper">
+    </div>
+    <div class="option" id="scissors">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC9oUAbibZvFraj0t5LAIQUtgv8QBM_LJE2kEOkCUwTdSQwQyRGWHYtNdCBIq5Ls6powM&amp;usqp=CAU"
+             style=" width:50%; margin-left: 300px;margin-right: 1%; margin-bottom:0.5em;" alt="Scissors">
+    </div>
+</div>
+<p id="move_selection" style= "text-align:center"; >Enjoy the game, Have Fun!</p>
+<script src="index.js" charset="utf-8"></script>
 
+</body>
+</html>
