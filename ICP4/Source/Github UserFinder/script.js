@@ -33,7 +33,7 @@ function showUser(user) {
         +"<br/><label style='color: #661d22'> Login ID : </label>"+ user.id
         +"<br/><label style='color: #661d22'> Node ID : </label>"+ user.node_id
         +"<br/> <label style='color: #66111c'>GitHub URL : </label>"+link
-        +"<br/> <label style='color: #661d36'>GitHub Repositories Of the User : </label>"+ user.public_repos);
+        +"<br/> <label style='color: #661d36'>No of Repositories of the user: </label>"+ user.public_repos);
 
     $("#profile").show();
 
