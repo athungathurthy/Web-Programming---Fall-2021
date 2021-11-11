@@ -1,0 +1,28 @@
+.container {
+  text-align: center;
+  margin-top: 10px;
+  border: 2px dashed white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+input {
+  background: white;
+  text-align: center;
+  border: 2px dashed lightskyblue;
+  outline: none;
+  border-radius: 20px;
+  padding: 4px 20px;
+  font-size: 24px;
+  width: 400px;
+}
+
+.countdown {
+  font-size: 45px;
+  height: 100px;
+  color: white;
+}
+
+#seconds {
+  color: #f54545;
+}

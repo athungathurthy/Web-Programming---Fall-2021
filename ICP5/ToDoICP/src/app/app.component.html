@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<app-timer></app-timer>
+<div class="container">
+  <div class="todo-list">
+    <div class="todo-list__head">
+      <h3><i class="far fa-list-alt"></i> Todo List</h3>
+      <ul class="todo-list__items" *ngFor="let item of items; let id = index" >
+        <li id="item{{id}}" [class]="item.complete ? 'checked' : 'unchecked'">
+          {{item.text}}
+          <span>{{id + 1}}</span>
+          <!-- checks and return completed item -->
+          <div class="todo-list-item__complete checked" *ngIf="item.complete">
+            <button (click)="completeItem(item)"><i class="fas fa-check-circle"></i></button>
+          </div>
+          <div class="todo-list-item__complete" *ngIf="!item.complete">
+            <button (click)="completeItem(item)"><i class="fas fa-check-circle"></i></button>
+          </div>
+          <div class="todo-list-item__trash">
+            <button (click)="deleteItem(item)"><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </li>
+      </ul>
+      <form class="todo-list-head__text-input">
+        <label for="newItem">Add new item:
+          <input name="task" id="newItem" #myInput>
+        </label>
+        <button (click)="submitNewItem(myInput.value)" type="submit"><i class="fas fa-plus-circle"></i></button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

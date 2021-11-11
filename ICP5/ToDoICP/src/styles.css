@@ -1,0 +1,15 @@
+body {
+  background: rgb(2,0,36);
+  background: gray;
+}
+
+.todo-list-item__trash button, button {
+  border: none;
+  background-color: #ffffff;
+}
+
+input {
+  width: 300px;
+  height: 80%;
+}
+
